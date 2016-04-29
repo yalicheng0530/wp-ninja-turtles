@@ -1,5 +1,9 @@
 # WordPress Ninja Turtles Practice
 
+## Before you begin, make sure all your tools are installed and set up. 
+
+[Here is a helpful step-by-step](https://github.com/kingluddite/web-dev-notes/blob/master/workflow/classroom-setup-instructions.md) in case you forgot.
+
 ## Installation Instructions For Local Development with WordPress
 
 ### 1. Clone Repo 
@@ -119,7 +123,17 @@ $ wp theme activate your-theme-name-here
 
 ### 11. See if you can install and active a plugin using WP-CLI
 
-Congratulations! If you get here and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
+### 12. Browse to your custom theme folder and type this in your Terminal
+
+```
+$ npm install
+```
+
+That should install all the dependencies we have listed in our custom theme's `package.json` file (we just have `bootstrap`).
+
+### 13. View Your WordPress project (through the eyes of your custom theme)
+
+Congratulations! [If you get here](https://i.imgur.com/hbcd082.png) and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
 
 
 
