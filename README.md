@@ -46,9 +46,14 @@ You will see output that shows it deleted all the .git files for your project
 $ git init
 ```
 
+### 1.c Github
+
 Now see if you can remember how to create a remote Github repo and connect your local WordPress project to your remote GitHub. (If you get stuck, first reach out to your classmates to see if they can help you).
 
 Make sure you add a README.md with your own installation instructions for your project.
+
+**Bonus** Did you ever wonder if you could create a Github repo without ever leaving the Terminal? You can and it's called `hub`. [Here's the link](https://hub.github.com/). Major props to those who dive into trying to see if they can get this to work.
+
 
 ### 2. Install WP-CLI
 
