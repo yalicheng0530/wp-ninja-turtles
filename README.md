@@ -149,19 +149,29 @@ This will create the tables and content of your WordPress install.
 * I use `password` as default user password
 * Make sure the folder you cloned from github is inside the `Sites` folder and you add this folder name to the end of `http://localhost/PUTHERE`
 
-### 8. Change Theme to your custom WordPress theme
+### 8. Change Theme
+
+Change theme to your custom WordPress theme.
 
 ```
 $ wp theme activate your-theme-name-here
 ```
 
-### 9. Create a project file in Sublime Text that will enable you to see both the Core WordPress files and the custom theme.
+### 9. Create Sublime Text Project file
 
-### 10. See if you can remove the twentyfifteen and twentyfourteen themes using WP-ClI
+Create a project file in Sublime Text that will enable you to see both the Core WordPress files and the custom theme.
 
-### 11. See if you can install and active a plugin using WP-CLI
+### 10. Remove themes
 
-### 12. Browse to your custom theme folder and type this in your Terminal
+See if you can remove the twentyfifteen and twentyfourteen themes using WP-ClI
+
+### 11. Add Plugins
+
+See if you can install and active a plugin using WP-CLI
+
+### 12. Install Project Dependencies
+
+Browse to your custom theme folder and type this in your Terminal
 
 ```
 $ npm install
@@ -169,9 +179,13 @@ $ npm install
 
 That should install all the dependencies we have listed in our custom theme's `package.json` file (we just have `bootstrap`).
 
-### 13. View Your WordPress project (through the eyes of your custom theme)
+### 13. View Your Masterpiece
 
-Congratulations! [If you get here](https://i.imgur.com/hbcd082.png) and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
+View Your WordPress project (through the eyes of your custom theme)
+
+# Congratulations! 
+
+[If you get here](https://i.imgur.com/hbcd082.png) and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
 
 
 
