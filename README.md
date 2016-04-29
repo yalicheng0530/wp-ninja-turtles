@@ -12,6 +12,44 @@
 $ git clone https://github.com/kingluddite/tmnt-wp-bs-theme.git wp-ninja-turtles
 ```
 
+### 1.a Remove Git
+
+Be careful here when using the `rm -rf` Terminal command
+
+Where are you in the terminal?
+
+```
+$ pwd
+```
+
+If you are in the root of your WordPress project
+
+Should be a folder inside your `Sites` folder.
+
+Look for `.git` file.
+
+```
+$ ls -la
+```
+
+It should be there. And now you want to delete it.
+
+```
+$ rm -rf .git
+```
+
+You will see output that shows it deleted all the .git files for your project
+
+### 1.b Initialize a new Git repo
+
+```
+$ git init
+```
+
+Now see if you can remember how to create a remote Github repo and connect your local WordPress project to your remote GitHub. (If you get stuck, first reach out to your classmates to see if they can help you).
+
+Make sure you add a README.md with your own installation instructions for your project.
+
 ### 2. Install WP-CLI
 
 Install WP-CLI so you can install WordPress from the Terminal. You should have this installed. If not, read the [wp-cli.md](https://github.com/kingluddite/web-dev-notes/blob/master/wordpress/wp-cli.md)
