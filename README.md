@@ -113,7 +113,13 @@ This will create the tables and content of your WordPress install.
 $ wp theme activate your-theme-name-here
 ```
 
-Congratulations. If you get here and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
+### 9. Create a project file in Sublime Text that will enable you to see both the Core WordPress files and the custom theme.
+
+### 10. See if you can remove the twentyfifteen and twentyfourteen themes using WP-ClI
+
+### 11. See if you can install and active a plugin using WP-CLI
+
+Congratulations! If you get here and you can view your custom theme using Twitter Bootstrap, you have completed the assignment.
 
 
 
