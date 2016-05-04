@@ -146,7 +146,6 @@ $ source ~/.zshrc
 
 ```
 $ wp core install --url=http://localhost/folder-name-here --title=YourSiteNameNoSpaces --admin_user=admin --admin_password=password --admin_email=youremail@someemail.com
-wp core install --url=http://localhost/wp-ninja-turtles --title=YourSiteNameNoSpaces --admin_user=admin --admin_password=password --admin_email=howley.phil@gmail.com
 ```
 
 This will create the tables and content of your WordPress install.
