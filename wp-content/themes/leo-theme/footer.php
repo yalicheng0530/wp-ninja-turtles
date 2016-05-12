@@ -1,7 +1,7 @@
       <hr>
 
       <footer>
-        <p>&copy; 2016 Viacom International Inc. All Rights Reserved. Nick and all related titles, logos and characters are trademarks of Viacom International Inc</p>
+        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
       </footer>
     </div> <!-- /container -->
 

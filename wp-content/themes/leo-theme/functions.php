@@ -1,4 +1,9 @@
 <?php
+/*===========================
+=            CSS            =
+===========================*/
+
+
 function theme_styles() {
     wp_enqueue_style( 'ie10_css', get_template_directory_uri() . '/css/ie10-viewport-bug-workaround.css' );
     wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css' );
@@ -6,6 +11,10 @@ function theme_styles() {
     wp_enqueue_style( 'leo_css', get_template_directory_uri() . '/css/leo.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
+
+/*==================================
+=            JavaScript            =
+==================================*/
 
 function theme_js() {
     global $wp_scripts;
@@ -20,4 +29,41 @@ function theme_js() {
     wp_enqueue_script( 'ie10_js', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', array('jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
+
+/*=============================
+=            Menus            =
+=============================*/
+
+add_theme_support( 'menus' );
+
+function register_theme_menus() {
+    register_nav_menus(
+      array(
+        'header-menu' => __( 'Header Menu' )
+      )
+    );
+}
+add_action( 'init', 'register_theme_menus' );
+
+/*===============================
+=            Widgets            =
+===============================*/
+
+function create_widget($name, $id, $description) {
+    register_sidebar(array(
+      'name' => __( $name ),
+      'id'   => $id,
+      'description' => __( $description ),
+      'before_widget' => '<div class="widget awesome">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+    ));
+}
+
+create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the hompage');
+create_widget( 'Front Page Center', 'front-center', 'Displays on the center of the hompage');
+create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the hompage');
+
+create_widget( 'Page Sidebar', 'page', 'Displays on side of pages with sidebar');
 ?>
